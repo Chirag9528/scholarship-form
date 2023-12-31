@@ -1,0 +1,221 @@
+<!-- up scholarship form -->
+<!DOCTYPE html>
+<head>
+    <title>UP SCHOLARSHIP FORM</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        table,th{
+            border:2px solid black;
+            
+        }
+        #abc{
+            text-align: center;
+            clear:both;
+        }
+        .common{
+            float:left;
+            width:48%;
+            padding:10px
+        }
+        hr,table{
+            clear:both;
+        }
+        fieldset{
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+<body>
+    <form action="chirag.php">
+            <fieldset>
+        <legend><h2>UP SCHOLARSHIP FORM</h2></legend>
+        <h3><b>PERSONAL DETAILS</b></h3>
+        <div class="common">
+        <label for="name">Name:</label>
+        <input type="text" name="myname" id="name" >
+        </div>
+        <div class="common">
+        <label for="father">Father's Name:</label>
+        <input type="text" name="myfather" id="father">
+        </div>
+        <div class="common">
+            <label for="mother">Mother's Name:</label>
+            <input type="text" name="mymother" id="mother">
+        </div>
+        <div class="common">
+            <label for="dob">DOB:</label>
+            <input type="date" name="mydob" id="dob">
+        </div>
+        <div class="common">
+            <label for="gender">Gender: </label>
+            <input type="radio" name="mygender" id="gender"> Male  <input type="radio" name="mygender" id="gender"> Female <input type="radio" name="mygender" id="gender"> Other
+        </div>
+        <hr>
+        <h3><b>EDUCATIONAL DETAILS</b></h3>
+        <div class="common">
+            <label for="course">Course: </label>
+            <select  name='mycourse' id="course">
+                <option value="betch">BTech</option>
+                <option value="mtech">MTech</option>
+                <option value="bsc">Bsc</option>
+                <option value="msc">Msc</option>
+
+            </select>
+        </div>
+        <div class="common">
+            <label for="presentyear">Present year:</label>
+            <select name="presentyr" id="presentyear">
+                <option value="first">1st year</option>
+                <option value="second">2nd year</option>
+                <option value="third">3rd year</option>
+                <option value="fourth">4th year</option>
+            </select>
+        </div>
+        <table>
+<thead>
+        <th>S.no</th>
+        <th>Class</th>
+        <th>Status</th>
+        <th>School Name</th>
+        <th>Board</th>
+        <th>Total Marks</th>
+        <th>Marks obtained</th>
+        <th>Percentage</th>
+    
+</thead>
+<tbody>
+    <tr>
+        <td>
+            <input type="number" name="sno">
+        </td>
+        <td>
+            <select>
+                <option value="10">CLASS10
+                </option>
+                <option value="12">CLASS12</option>
+            </select>
+        </td>
+        <td>
+            <select>
+                <option value="passed">Passed</option>
+                <option value="failed">Failed</option>
+            </select>
+        </td>
+        <td>
+            <input type="text" name="myschool">
+        </td>
+        <td>
+            <select>
+                <option value="cbse">CBSE</option>
+                <option value="amu">AMU BOARD</option>
+                <option value="stateboard">State Board</option>
+                <option value="other">Any other board</option>
+            </select>
+        </td>
+        <td>
+            <input type="number" name="marks">
+        </td>
+        <td>
+            <input type="number" name="obtained">
+
+        </td>
+        <td>
+            <input type="number" name="Percentage">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <input type="number" name="sno">
+        </td>
+        <td>
+            <select>
+                <option value="10">CLASS10
+                </option>
+                <option value="12" selected>CLASS12</option>
+            </select>
+        </td>
+        <td>
+            <select>
+                <option value="passed">Passed</option>
+                <option value="failed">Failed</option>
+            </select>
+        </td>
+        <td>
+            <input type="text" name="myschool">
+        </td>
+        <td>
+            <select>
+                <option value="cbse">CBSE</option>
+                <option value="amu">AMU BOARD</option>
+                <option value="stateboard">State Board</option>
+                <option value="other">Any other board</option>
+            </select>
+        </td>
+        <td>
+            <input type="number" name="marks">
+        </td>
+        <td>
+            <input type="number" name="obtained">
+
+        </td>
+        <td>
+            <input type="number" name="Percentage">
+        </td>
+    </tr>
+</tbody>
+        </table>
+
+
+
+        <hr>
+        <h3><b>ADDRESS</b></h3>
+        <div class="common">
+            <label for="address">Correspondence Address: </label>
+            <br>
+            <textarea name="myaddress" id="address"></textarea>
+        </div>
+        <div class="common">
+            <label for="peraddress">Permanent Address: </label>
+            <br>
+            <textarea name="myperaddress" id="peraddress"></textarea>
+        </div>
+        <hr>
+        <h3><b>OTHER DETAILS</b></h3>
+        <div class="common">
+            <label for="applied">Applied for any other scholarships:</label>
+            <input type="checkbox" name="appliedforother" id="applied" checked>
+        </div>
+        <div class="common">
+            <label for="aadhar">Aadhar Number:</label>
+            <input type="text" name="myaadhar" id="aadhar">
+        </div>
+        <div class="common">
+            <label for="email">Email:</label>
+            <input type="email" name="myemail" id="email">
+        </div>
+        <div class="common">
+            <label for="pass">Create Password:</label>
+            <input type="password" name="mypass" id="pass">
+        </div>
+        <div class="common">
+            <label for="confirm">Confirm Password</label>
+            <input type="text" name="confirmpass" id="confirm">
+        </div>
+
+
+
+
+        <br>        <br>
+ <p id="abc">
+            <input type="submit" value="Submit">
+            &nbsp;
+            &nbsp; 
+            <!-- for space between submit and reset -->
+            <input type="reset" value="Reset">
+ </p>
+        </fieldset>
+    </form>
+</body>
+</html>
